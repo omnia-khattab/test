@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/FAVICON.png">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap" rel="stylesheet">
+    <title>Star Effect- EEMS</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/productDetails.min.css">
+</head>
+<body>
+
+    <section id="loading">
+        <div class="spinner"></div>
+    </section>
+
+    <header>
+        <div id="nav-placeholder">
+
+        </div>
+    </header>
+
+    <section id="product-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 product-images">
+                    <img src="images/crystal_0035.jpg" class="img-item" id="mainImage">
+
+                    <img src="images/crystal_0035.jpg" class="img-item  mt-3">
+                    <img src="images/crystal_0036.jpg" class="img-item  mt-3">
+                    <img src="images/crystal_0037.jpg" class="img-item  mt-3">
+                    <img src="images/crystal_0038.png" class="img-item  mt-3">
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="porduct-details-right mt-5">
+                        <h5>star effect</h5>
+                        <span class="cateogry">cateogry:</span><h7 class="text-muted"><a href="uderwaterLight-Crystal.html">Crystal</a>, underwater light</h7>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation" class="mt-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item ">
+                    <button id='C_prev' class="page-link" >Previous</button>
+                </li>
+                <li class="page-item">
+                    <button id='C_next' class="page-link">Next</button>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <!----------------------Modal--------------------->
+    <div id="lightbox-container" class=" justify-content-center align-items-center">
+        <div id="lightbox-item" class="d-flex align-items-center justify-content-between">
+            <i id="close" class="far fa-times-circle fa-2x"></i>
+            <i id="prev" class="far m-2 fa-caret-square-left fa-2x"></i>
+            <i id="next" class="far m-2 fa-caret-square-right fa-2x"></i>
+        </div>
+    </div>
+
+<footer id="contact">
+    </footer>
+        
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/productDetails.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script>
+        $(function() {  
+    $("body").niceScroll({
+    cursoropacitymin: 0,
+    cursoropacitymax: 0,    
+    });
+    
+    });
+    </script>
+</body>
+</html>

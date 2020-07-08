@@ -1,0 +1,42 @@
+#contact{
+    background-color:rgb(45, 49, 77) ;
+    color: white;
+}
+.footer-logo{
+    width: 150px;
+    -webkit-filter: brightness(5);
+            filter: brightness(5);
+}
+.contactBox-right {
+    background-image: url(../images/contact-details-map.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+hr{
+    width: 80%;
+    height: 1px;
+    background-color: #cfcfcf;
+    border: none;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+.contactBox-right .contactList {
+    margin-bottom: 10px;
+    margin-top: 10px;  
+}
+.contactBox-left{
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 414px){
+    /*#contact .row{
+        text-align: center;
+    }*/
+    .contactBox-left{
+        justify-content: center;
+    }
+}
