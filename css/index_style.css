@@ -1,5 +1,5 @@
-@import url("footer.css");
-@import url("navbar.css");
+@import url("footer.min.css");
+@import url("navbar.min.css");
 *{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -176,29 +176,29 @@ ul{
     position: relative;
 }
 .slide1 {
-    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.2)), to(rgba(0,0,0,0.2))), url('../images/cover-1.jpg');
-    background-image:-o-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,0.2)), url('../images/cover-1.jpg');
-    background-image:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,0.2)), url('../images/cover-1.jpg');
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.2)), to(rgba(0,0,0,0.2))), url('../images/cover-1.webp'),url('../images/cover-1.jpg');
+    background-image:-o-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,0.2)), url('../images/cover-1.webp'),url('../images/cover-1.jpg');
+    background-image:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,0.2)), url('../images/cover-1.webp'),url('../images/cover-1.jpg');;
 }
 .slide2 {
-    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.2)), to(rgba(0,0,0,.2))), url('../images/cover-2.jpg');
-    background-image:-o-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-2.jpg');
-    background-image:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-2.jpg');
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.2)), to(rgba(0,0,0,.2))), url('../images/cover-2.webp'),url('../images/cover-2.jpg');
+    background-image:-o-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-2.webp'),url('../images/cover-2.jpg');
+    background-image:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-2.webp'),url('../images/cover-2.jpg');
 }
 .slide3 {
-    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.2)), to(rgba(0,0,0,.2))), url('../images/cover-3.jpg');
-    background-image:-o-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-3.jpg');
-    background-image:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-3.jpg');
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.2)), to(rgba(0,0,0,.2))), url('../images/cover-3.webp'),url('../images/cover-3.jpg');
+    background-image:-o-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-3.webp'),url('../images/cover-3.jpg');
+    background-image:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-3.webp'),url('../images/cover-3.jpg');
 }
 .slide4 {
-    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.2)), to(rgba(0,0,0,.2))), url('../images/cover-4.jpg');
-    background-image:-o-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-4.jpg');
-    background-image:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-4.jpg');
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.2)), to(rgba(0,0,0,.2))), url('../images/cover-4.webp'),url('../images/cover-4.jpg');
+    background-image:-o-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-4.webp'),url('../images/cover-4.jpg');
+    background-image:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-4.webp'),url('../images/cover-4.jpg');
 }
 .slide5 {
-    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.2)), to(rgba(0,0,0,.2))), url('../images/cover-5.jpg');
-    background-image:-o-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-5.jpg');
-    background-image:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-5.jpg');
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.2)), to(rgba(0,0,0,.2))), url('../images/cover-5.webp'),url('../images/cover-5.jpg');
+    background-image:-o-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-5.webp' ),url('../images/cover-5.jpg');
+    background-image:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../images/cover-5.webp'),url('../images/cover-5.jpg');
 }
 .btn-header{
     white-space: nowrap;
@@ -223,9 +223,6 @@ ul{
 cursor: pointer;
 color: #2d314d;
 }
-/*#ledLighting h1{
-    display: none;
-}*/
 #ledLighting h1::after{
     content: '';
     position: absolute;
@@ -233,7 +230,6 @@ color: #2d314d;
     left: 45%;
     width: 100px;
     height: 2px;
-    /*background-color: #FBBA00;*/
     background:-o-linear-gradient(left,rgb(49, 211, 92), rgb(43, 183, 218));
     background:-webkit-gradient(linear,left top, right top,from(rgb(49, 211, 92)), to(rgb(43, 183, 218)));
     background:linear-gradient(to right,rgb(49, 211, 92), rgb(43, 183, 218));
@@ -245,56 +241,6 @@ color: #2d314d;
     border-bottom-right-radius: 5rem;
     min-height: 100%;
 }
-
-/*@-webkit-keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(-130%);
-                transform: translateX(-130%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-    }
-}
-
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(-130%);
-                transform: translateX(-130%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-    }
-}
-@-webkit-keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(130%);
-                transform: translateX(130%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-    }
-}
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(130%);
-                transform: translateX(130%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-    }
-}*/
 /********About Us*******/
 #aboutUS{
     background-color: #26293f;
@@ -307,7 +253,6 @@ color: #2d314d;
     left: 45%;
     width: 100px;
     height: 2px;
-    /*background-color: #FBBA00;*/
     background:-o-linear-gradient(left,rgb(49, 211, 92), rgb(43, 183, 218));
     background:-webkit-gradient(linear,left top, right top,from(rgb(49, 211, 92)), to(rgb(43, 183, 218)));
     background:linear-gradient(to right,rgb(49, 211, 92), rgb(43, 183, 218));
@@ -328,6 +273,20 @@ color: #2d314d;
     left: 10%;
     width: 80%;
     
+}
+#services h3{
+    color:#26293f;
+}
+#services h3::after{
+    content: '';
+    position: absolute;
+    bottom:-10px;
+    left: 46%;
+    width: 100px;
+    height: 2px;
+    background:-o-linear-gradient(left,rgb(49, 211, 92), rgb(43, 183, 218));
+    background:-webkit-gradient(linear,left top, right top,from(rgb(49, 211, 92)), to(rgb(43, 183, 218)));
+    background:linear-gradient(to right,rgb(49, 211, 92), rgb(43, 183, 218));
 }
 #services .services-box{
     background-color: #26293f;
@@ -388,9 +347,6 @@ color: #2d314d;
 .no-border {
     outline: none;
     border: none ;
-    /*-webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;*/
 }
 
 /**************Media Query****************/
@@ -428,6 +384,10 @@ color: #2d314d;
         width: 180px;
         height: 250px;
         
+    }
+    #services h3::after{
+        left: 43%;
+        width: 45px;
     }
     #ContactUS{ 
         padding: 1.8rem 1rem;

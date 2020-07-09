@@ -1,6 +1,6 @@
 <nav id='navbar' class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand logo" href="/index.html"><img class="" src="images/rsz_favicon.webp" style="width: 4rem;" alt="Logo"></a>
+        <a class="navbar-brand logo" href="/index.html"><img class="" src="images/rsz_favicon.png" style="width: 4rem;" alt="Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -8,10 +8,10 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link mr-4" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link a-link mr-4" href="/index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Products </a>
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Products </a>
                 <ul class="dropdown-menu submenue" aria-labelledby="navbarDropdownMenuLink">
                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href='#'>UnderWater Light</a>
                         <ul class="dropdown-menu submenue">
@@ -22,27 +22,19 @@
                 </ul>
             </li>
             <li class="nav-item mr-4">
-                <a class="nav-link" href='#aboutUS'>About Us</a>
+                <a class="nav-link a-link" href='/index.html'>About Us</a>
             </li>
             <li class="nav-item mr-4">
-                <a class="nav-link" href="#">Innovation</a>
+                <a class="nav-link a-link" href="/projects.html">Innovation Projects</a>
             </li>
             <li class="nav-item mr-4">
-                <a class="nav-link" href='#ContactUS'>Contact Us</a>
+                <a class="nav-link a-link" href='/index.html'>Contact Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href='#contact'>Contact</a>
+                <a class="nav-link a-link" href='#contact'>Contact</a>
             </li>
             </ul>
         </div>
         </div>
     </nav>
-    <script>
-        $('.nav-link').click(function(){
-    let aHref = $(this).attr('href');
-    console.log(aHref);
-    let sectionOffset = $(aHref).offset().top;
-    console.log(sectionOffset);
-    $("html,body").animate( { scrollTop: sectionOffset} , 1000);
-    });
-    </script>
+    

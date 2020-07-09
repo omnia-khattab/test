@@ -8,24 +8,26 @@ $(document).ready(function(){
 
     $("#contact").load("footer.html");
 
+    new WOW().init();
 
-    /* product boxs FadeIn animation */
-    $('.product').fadeIn(6000);
-
+    $(function() {  
+        $("body").niceScroll({
+        cursoropacitymin: 0,
+        cursoropacitymax: 0,    
+        });
+        
+    });
 
     $(".menu-icons").click(function () {
         $("nav").toggleClass('active');
     });
 
     /* scroll when i click on a link */
-    /*$("nav-link").click(function(){
-        let aHref=$(this).attr("href");
-        console.log(aHref);
-        let sectionOffset=$(aHref).offset().top;
-        console.log(sectionOffset);
-        $("html,body").animate({scrollTop:sectionOffset},1000);
-    });*/
-
+    $('.a-link').click(function(){
+        let aHref = $(this).attr('href');
+        let sectionOffset = $(aHref).offset().top;
+        $("html,body").animate( { scrollTop: sectionOffset} , 1000);
+        });
 
     /*Scroll up/down Animation button */
     $(window).scroll(function(){

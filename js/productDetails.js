@@ -12,12 +12,19 @@ $("#contact").load("footer.html");
 $(".menu-icons").click(function () {
     $("nav").toggleClass('active');
 });
-
+/*nice scroll*/
+$(function() {  
+    $("body").niceScroll({
+    cursoropacitymin: 0,
+    cursoropacitymax: 0,    
+    });
+    
+});
 /* scroll when i click on a navbar link */
-$(".nav-link").click(function(){
-    let aHref=$(this).attr("href");
-    let sectionOffset=$(aHref).offset().top
-    $("html,body").animate({scrollTop:sectionOffset},1000);
+$('.a-link').click(function(){
+    let aHref = $(this).attr('href');
+    let sectionOffset = $(aHref).offset().top;
+    $("html,body").animate( { scrollTop: sectionOffset} , 1000);
 });
 
 /*naving between products images*/
@@ -40,10 +47,6 @@ $(window).scroll(function(){
     }
 });
 
-//Pagination
-/*$('.pagination li').click(function() {
-    $(this).addClass('active').siblings().removeClass('active');
-});*/
 let crystal_pages = ['/crystal-compactUnite.html','/crystal-flatLamp.html','/crystal-fountainRing.html',
     '/crystal-fountainSpot.html','/crystal-LedFlexNeuon.html','/crystal-nicheLighting.html',
     '/crystal-pcSpot.html','/crystal-pcLamp.html','/crystal-stainlessteelLamp.html',
